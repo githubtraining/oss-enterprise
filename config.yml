@@ -21,6 +21,9 @@ before:
 # 6. PR: Add checklists for issue template
 # 7. PR: Maintainer guide
 # 8. PR: License policy
+# 9. PR: Add issue template for consuming OSS
+# 10. PR: Add a template README
+# 11. Issue: Congratulations
 
 steps:
 
@@ -187,10 +190,33 @@ steps:
 #8
 - title: Provide guidance for consuming open source software
   description: Approve the PR that allows 
-  link: '{{ repoUrl }}/pull/8'
+  link: '{{ repoUrl }}/pull/9'
   event: pull_request_review.submitted
   actions:
   - type: gate
     left: '%payload.review.state%'
     operator: ===
     right: approved
+  - type: createPullRequest
+    title: Add a template README
+    body: 10-template-readme-pr.md 
+    head: template-readme
+    action_id: templateReadme
+  - type: respond
+    with: goto-template-readme-pr.md
+    data:
+      url: '%actions.templateReadme.data.html_url%'
+
+#9
+- title: Add a template README
+  description: Provide a README that team members can use when open sourcing their projects.
+  link: '{{ repoUrl }}/pull/10'
+  event: pull_request_review.submitted
+  actions:
+  - type: gate
+    left: '%payload.review.state%'
+    operator: ===
+    right: approved
+  - type: createIssue
+    title: Congratulations
+    body: done.md

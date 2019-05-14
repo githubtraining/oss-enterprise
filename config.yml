@@ -135,3 +135,24 @@ steps:
     left: '%payload.review.state%'
     operator: ===
     right: approved
+  # TODO: template repo needs a `add-checklists` branch
+  - type: createPullRequest
+    title: Provide checklists for issue template
+    body: 06-checklists-pr.md
+    head: add-checklists
+    action_id: checklistsPR
+  - type: respond
+    with: goto-checklists-pr.md
+    data:
+      url: '%actions.checklistsPR.data.html_url%'
+
+#6
+- title: Add checklists
+  description: Provide checklists that can be used to release a new open source project.
+  link: '{{ repoUrl }}/pull/6'
+  event: pull_request_review.submitted
+  actions:
+  - type: gate
+    left: '%payload.review.state%'
+    operator: ===
+    right: approved

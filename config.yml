@@ -13,6 +13,12 @@ before:
 - type: updateBranchProtection
 
 # Course artifacts:
+# 1. Issue: Maturity assessment
+# 2. PR: Add a README
+# 3. PR: Add contributing guidelines
+# 4. PR: Add a code of conduct
+
+# Rough outline:
 # - Purpose: create an open source releases-like repo, a resource used by your organization to launch open source projects. 
 #   This could include:
 #   - purpose of open source program
@@ -54,6 +60,7 @@ steps:
     data:
       url: '%actions.readmePR.data.html_url%'
 
+#2
 - title: Give your repository a README.
   description: Approve the open source kit's README.
   link: '{{ repoUrl }}/pull/2'
@@ -74,6 +81,7 @@ steps:
     data:
       url: '%actions.contributingPR.data.html_url%'
 
+#3
 - title: Give your kit contributing guidelines
   description: Approve the opens ource kit's contributing guidelines.
   link: '{{ repoUrl }}/pull/3'
@@ -93,3 +101,11 @@ steps:
     with: goto-cocPr-pr.md
     data:
       url: '%actions.cocPr.data.html_url%'
+
+# TODO: consider adding activity on compliant/violating COC behavior?
+
+#4
+- title: Provide a code of conduct
+  description: Approve the pull request adding a code of conduct template
+  link: '{{ repoUrl }}/pull/4'
+  event: 

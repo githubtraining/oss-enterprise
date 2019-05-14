@@ -20,6 +20,7 @@ before:
 # 5. PR: Add communication guidelines
 # 6. PR: Add checklists for issue template
 # 7. PR: Maintainer guide
+# 8. PR: License policy
 
 # Rough outline:
 # - Purpose: create an open source releases-like repo, a resource used by your organization to launch open source projects. 
@@ -174,6 +175,29 @@ steps:
 - title: Add a maintainer's guide
   description: Approve the PR that gives open source maintainers some guidance with a guide.
   link: '{{ repoUrl }}/pull/7'
+  event: pull_request_review.submitted
+  actions:
+  - type: gate
+    left: '%payload.review.state%'
+    operator: ===
+    right: approved
+  # TODO: template repo needs a `add-license` branch
+  - type: createPullRequest
+    title: License policy
+    body: 08-license-policy-pr.md
+    head: add-license
+    action_id: licensePR
+  - type: respond
+    with: goto-license-pr.md
+    data:
+      url: '%actions.licensePR.data.html_url%'
+
+# TODO: consider a licensing quiz or activity
+
+#7
+- title: Add a license policy
+  description: Help your organization determine what licenses should be used by creating a license policy.
+  link: '{{ repoUrl }}/pull/8'
   event: pull_request_review.submitted
   actions:
   - type: gate

@@ -222,3 +222,8 @@ steps:
   - type: createIssue
     title: Congratulations
     body: done.md
+    action_id: finalIssue
+  - type: respond
+    with: goto-final-issue.md
+    data:
+      url: '%actions.finalIssue.data.html_url%'

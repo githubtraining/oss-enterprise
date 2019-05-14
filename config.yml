@@ -9,7 +9,7 @@ before:
   title: Maturity assessment
   body: welcome.md
   comments:
-    - set-goals.md
+    - 01-goals-issue.md
 - type: updateBranchProtection
 
 # Course artifacts:
@@ -38,9 +38,40 @@ before:
 steps:
 
 #1
-- title: 
-  description: 
+- title: Establish preliminary goals
+  description: Begin thinking about the goals of your open source program.
   link: '{{ repoUrl }}/issues/1'
-  event: 
+  event: issue_comment.created
   actions:
-  - type: 
+  # TODO: template repo needs a `add-readme` branch
+  - type: createPullRequest
+    title: Add a README
+    body: 02-readme-pr.md
+    head: add-readme
+    action_id: readmePR
+  - type: respond
+    with: goto-readme-pr.md
+    data:
+      url: '%actions.readmePR.data.html_url%'
+
+- title: Give your repository a README.
+  description: Approve the open source kit's README.
+  link: '{{ repoUrl }}/pull/2'
+  event: pull_request_review.submitted
+  actions:
+  - type: gate
+    left: '%payload.review.state%'
+    operator: ===
+    right: approved
+  # TODO: template repo needs a `add-contributing` branch
+  - type: createPullRequest
+    title: Add contributing guidelines
+    body: 03-contributing-pr.md
+    head: add-contributing
+    action_id: contributingPR
+  - type: respond
+    with: goto-contributing-pr.md
+    data:
+      url: '%actions.contributingPR.data.html_url%'
+
+- title: Give your kit contributing guidelines

@@ -18,3 +18,8 @@ If you're looking for inspiration, here are some great examples of `CONTRIBUTING
 
 - [ ] Look through the examples listed above, and make note of qualities you like (or don't like) about each document
 - [ ] Change the document in this pull request so it is a good template for all other repositories in your organization
+
+Commit directly to this branch. When you're ready to move on, approve this pull request.
+
+<hr>
+<h3 align="center">I'll respond when you approve this pull request.</h3>

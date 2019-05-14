@@ -75,3 +75,21 @@ steps:
       url: '%actions.contributingPR.data.html_url%'
 
 - title: Give your kit contributing guidelines
+  description: Approve the opens ource kit's contributing guidelines.
+  link: '{{ repoUrl }}/pull/3'
+  event: pull_request_review.submitted
+  actions:
+  - type: gate
+    left: '%payload.review.state%'
+    operator: ===
+    right: approved
+  # TODO: template repo needs a `add-coc` branch
+  - type: createPullRequest
+    title: Add a code of conduct
+    body: 04-code-of-conduct-pr.md
+    head: add-coc
+    action_id: cocPr
+  - type: respond
+    with: goto-cocPr-pr.md
+    data:
+      url: '%actions.cocPr.data.html_url%'

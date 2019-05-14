@@ -28,7 +28,7 @@ We have created a template license policy for you in this pull request.  Work wi
 - [ ] Evaluate [common open source licenses](https://choosealicense.com/appendix/) and decide which you are willing to accept for projects consumed and contributed to. Add these to the license-policy.md
 - [ ] Define and document the process you will use to  enforce your license policy
 
-Commit directly to this branch. When you're ready to move on, approve this pull request.
+Commit directly to this branch. When you're ready to move on, merge this pull request.
 
 <hr>
-<h3 align="center">I'll respond when you approve this pull request.</h3>
+<h3 align="center">I'll respond when you merge this pull request.</h3>

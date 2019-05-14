@@ -12,7 +12,7 @@ There are a lot of nuanced behaviors that go into managing OSS. Use this documen
 ## Next Steps
 - [ ] Edit this document to reflect the expectations for communication with OSS at your organization
 
-Commit directly to this branch. When you're ready to move on, approve this pull request.
+Commit directly to this branch. When you're ready to move on, merge this pull request.
 
 <hr>
-<h3 align="center">I'll respond when you approve this pull request.</h3>
+<h3 align="center">I'll respond when you merge this pull request.</h3>

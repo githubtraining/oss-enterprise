@@ -52,7 +52,7 @@ It is generally acceptable to customize the code of conduct to meet your organiz
 - [ ] Create your custom code in the CODE-OF-CONDUCT-template.md file in this pull request
 - [ ] Replace the text in the instructions document of this pull request, instructing users to copy/paste the template code into their projects
 
-Commit directly to this branch. When you're ready to move on, approve this pull request.
+Commit directly to this branch. When you're ready to move on, merge this pull request.
 
 <hr>
-<h3 align="center">I'll respond when you approve this pull request.</h3>
+<h3 align="center">I'll respond when you merge this pull request.</h3>

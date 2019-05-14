@@ -7,7 +7,7 @@ Use this document to formalize expectations for maintainers and help everyone le
 ## Next Steps
 - [ ] Update the `maintainer-guide.md` in this repository to reflect the support and guidance you want to give project maintainers at your organization
 
-Commit directly to this branch. When you're ready to move on, approve this pull request.
+Commit directly to this branch. When you're ready to move on, merge this pull request.
 
 <hr>
-<h3 align="center">I'll respond when you approve this pull request.</h3>
+<h3 align="center">I'll respond when you merge this pull request.</h3>

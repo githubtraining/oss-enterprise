@@ -7,7 +7,7 @@ This pull request adds an issue template that can be customized for use when tea
 - [ ] Customize the template to reflect the aspects of project health that are important for your team members to consider
 - [ ] Add a checklist per your internal processes
 
-Commit directly to this branch. When you're ready to move on, approve this pull request.
+Commit directly to this branch. When you're ready to move on, merge this pull request.
 
 <hr>
-<h3 align="center">I'll respond when you approve this pull request.</h3>
+<h3 align="center">I'll respond when you merge this pull request.</h3>

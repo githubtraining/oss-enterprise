@@ -10,7 +10,6 @@ before:
   body: welcome.md
   comments:
     - 01-goals-issue.md
-- type: updateBranchProtection
 
 # Course artifacts:
 # 1. Issue: Maturity assessment

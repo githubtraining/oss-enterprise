@@ -26,7 +26,7 @@ This checklist will be a work in progress as you complete the other steps in thi
 - [ ] Add steps you will require maintainers to complete
 - [ ] Remove steps you will not require maintainers to complete
 
-Commit directly to this branch. When you're ready to move on, approve this pull request.
+Commit directly to this branch. When you're ready to move on, merge this pull request.
 
 <hr>
-<h3 align="center">I'll respond when you approve this pull request.</h3>
+<h3 align="center">I'll respond when you merge this pull request.</h3>

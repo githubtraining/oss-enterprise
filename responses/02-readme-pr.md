@@ -18,7 +18,7 @@ It's a good idea to include links to other documents that you've created (or wil
   - How does this repository relate to other projects and business goals?
 - [ ] Update the `README.md` in this pull request to reflect the information you want to include about your project
 
-Commit directly to this branch. When you're ready to move on, approve this pull request.
+Commit directly to this branch. When you're ready to move on, merge this pull request.
 
 <hr>
-<h3 align="center">I'll respond when you approve this pull request.</h3>
+<h3 align="center">I'll respond when you merge this pull request.</h3>

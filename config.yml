@@ -46,12 +46,10 @@ steps:
 - title: Give your repository a README.
   description: Approve the open source kit's README.
   link: '{{ repoUrl }}/pull/2'
-  event: pull_request_review.submitted
+  event: pull_request.closed
   actions:
   - type: gate
-    left: '%payload.review.state%'
-    operator: ===
-    right: approved
+    left: '%payload.pull_request.merged%'
   - type: createPullRequest
     title: Add contributing guidelines
     body: 03-contributing-pr.md
@@ -66,12 +64,10 @@ steps:
 - title: Give your kit contributing guidelines
   description: Approve the opens ource kit's contributing guidelines.
   link: '{{ repoUrl }}/pull/3'
-  event: pull_request_review.submitted
+  event: pull_request.closed
   actions:
   - type: gate
-    left: '%payload.review.state%'
-    operator: ===
-    right: approved
+    left: '%payload.pull_request.merged%'
   - type: createPullRequest
     title: Add a code of conduct
     body: 04-code-of-conduct-pr.md
@@ -88,12 +84,10 @@ steps:
 - title: Provide a code of conduct
   description: Approve the pull request adding a code of conduct template
   link: '{{ repoUrl }}/pull/4'
-  event: pull_request_review.submitted
+  event: pull_request.closed
   actions:
   - type: gate
-    left: '%payload.review.state%'
-    operator: ===
-    right: approved
+    left: '%payload.pull_request.merged%'
   - type: createPullRequest
     title: Add communication guidelines
     body: 05-comm-guidelines-pr.md
@@ -108,12 +102,10 @@ steps:
 - title: Add communication guidelines
   description: Approve the pull request that adds communication guidelines for your organization.
   link: '{{ repoUrl }}/pull/5'
-  event: pull_request_review.submitted
+  event: pull_request.closed
   actions:
   - type: gate
-    left: '%payload.review.state%'
-    operator: ===
-    right: approved
+    left: '%payload.pull_request.merged%'
   - type: createPullRequest
     title: Add checklists for issue template
     body: 06-checklists-pr.md
@@ -128,12 +120,10 @@ steps:
 - title: Add checklists
   description: Provide checklists that can be used to release a new open source project.
   link: '{{ repoUrl }}/pull/6'
-  event: pull_request_review.submitted
+  event: pull_request.closed
   actions:
   - type: gate
-    left: '%payload.review.state%'
-    operator: ===
-    right: approved
+    left: '%payload.pull_request.merged%'
   - type: createPullRequest
     title: Maintainer guide
     body: 07-maintainer-pr.md
@@ -148,12 +138,10 @@ steps:
 - title: Add a maintainer's guide
   description: Approve the PR that gives open source maintainers some guidance with a guide.
   link: '{{ repoUrl }}/pull/7'
-  event: pull_request_review.submitted
+  event: pull_request.closed
   actions:
   - type: gate
-    left: '%payload.review.state%'
-    operator: ===
-    right: approved
+    left: '%payload.pull_request.merged%'
   - type: createPullRequest
     title: License policy
     body: 08-license-policy-pr.md
@@ -170,12 +158,10 @@ steps:
 - title: Add a license policy
   description: Help your organization determine what licenses should be used by creating a license policy.
   link: '{{ repoUrl }}/pull/8'
-  event: pull_request_review.submitted
+  event: pull_request.closed
   actions:
   - type: gate
-    left: '%payload.review.state%'
-    operator: ===
-    right: approved
+    left: '%payload.pull_request.merged%'
   - type: createPullRequest
     title: Add issue template for consuming OSS
     body: 09-consuming-pr.md
@@ -190,12 +176,10 @@ steps:
 - title: Provide guidance for consuming open source software
   description: Approve the PR that allows 
   link: '{{ repoUrl }}/pull/9'
-  event: pull_request_review.submitted
+  event: pull_request.closed
   actions:
   - type: gate
-    left: '%payload.review.state%'
-    operator: ===
-    right: approved
+    left: '%payload.pull_request.merged%'
   - type: createPullRequest
     title: Add a template README
     body: 10-template-readme-pr.md 
@@ -210,12 +194,10 @@ steps:
 - title: Add a template README
   description: Provide a README that team members can use when open sourcing their projects.
   link: '{{ repoUrl }}/pull/10'
-  event: pull_request_review.submitted
+  event: pull_request.closed
   actions:
   - type: gate
-    left: '%payload.review.state%'
-    operator: ===
-    right: approved
+    left: '%payload.pull_request.merged%'
   - type: createIssue
     title: Congratulations
     body: done.md

@@ -50,6 +50,9 @@ steps:
   actions:
   - type: gate
     left: '%payload.pull_request.merged%'
+    else:
+    - type: respond
+      with: e-unexpected-merge.md
   - type: createPullRequest
     title: Add contributing guidelines
     body: 03-contributing-pr.md
@@ -68,6 +71,9 @@ steps:
   actions:
   - type: gate
     left: '%payload.pull_request.merged%'
+    else:
+    - type: respond
+      with: e-unexpected-merge.md
   - type: createPullRequest
     title: Add a code of conduct
     body: 04-code-of-conduct-pr.md
@@ -88,6 +94,9 @@ steps:
   actions:
   - type: gate
     left: '%payload.pull_request.merged%'
+    else:
+    - type: respond
+      with: e-unexpected-merge.md
   - type: createPullRequest
     title: Add communication guidelines
     body: 05-comm-guidelines-pr.md
@@ -106,6 +115,9 @@ steps:
   actions:
   - type: gate
     left: '%payload.pull_request.merged%'
+    else:
+    - type: respond
+      with: e-unexpected-merge.md
   - type: createPullRequest
     title: Add checklists for issue template
     body: 06-checklists-pr.md
@@ -162,6 +174,9 @@ steps:
   actions:
   - type: gate
     left: '%payload.pull_request.merged%'
+    else:
+    - type: respond
+      with: e-unexpected-merge.md
   - type: createPullRequest
     title: Add issue template for consuming OSS
     body: 09-consuming-pr.md
@@ -180,6 +195,9 @@ steps:
   actions:
   - type: gate
     left: '%payload.pull_request.merged%'
+    else:
+    - type: respond
+      with: e-unexpected-merge.md
   - type: createPullRequest
     title: Add a template README
     body: 10-template-readme-pr.md 
@@ -198,6 +216,9 @@ steps:
   actions:
   - type: gate
     left: '%payload.pull_request.merged%'
+    else:
+    - type: respond
+      with: e-unexpected-merge.md
   - type: createIssue
     title: Congratulations
     body: done.md

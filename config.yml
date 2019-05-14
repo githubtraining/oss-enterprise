@@ -1,0 +1,46 @@
+title: Open source in the enterprise
+tagline: Open source in the enterprise
+description: Open source in the enterprise
+template:
+  name: oss-enterprise
+  repo: false
+before:
+- type: createIssue
+  title: Maturity assessment
+  body: welcome.md
+  comments:
+    - set-goals.md
+- type: updateBranchProtection
+
+# Course artifacts:
+# - Purpose: create an open source releases-like repo, a resource used by your organization to launch open source projects. 
+#   This could include:
+#   - purpose of open source program
+#   - first steps in releasing open source software
+#   - code of conduct
+#   - relation to business goals
+# - Step 1: Add some template files
+#   - in a PR, learner adds CONTRIBUTING.md file
+#   - perhaps merge in multiple contributing guidelines
+# - Step 2: Learner merges in COC
+#   - quiz on compliant/violating COC behavior?
+# - Step 3: Learner merges in communication guidelines
+# - Step 4: Learner merges an open source checklist
+#   - define a process for OSS
+#   - it's self serve
+# - Step 5: Learner merges in a maintainer guide
+# - Step 6: Learner merges in license requirements
+#   - activity: pick the right license
+# - Step 7: Learner adds issue templates that can be copied
+# - Step 8: Learner adds in README template that can be copied
+# - Step 9: 
+
+steps:
+
+#1
+- title: 
+  description: 
+  link: '{{ repoUrl }}/issues/1'
+  event: 
+  actions:
+  - type: 

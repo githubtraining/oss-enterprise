@@ -179,7 +179,7 @@ steps:
   - type: createPullRequest
     title: Add issue template for consuming OSS
     body: 09-consuming-pr.md
-    head: using-oss
+    head: key-questions
     action_id: consumingPR
   - type: respond
     with: goto-consuming-pr.md

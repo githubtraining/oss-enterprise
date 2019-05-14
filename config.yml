@@ -3,7 +3,7 @@ tagline: Open source in the enterprise
 description: Open source in the enterprise
 template:
   name: oss-enterprise
-  repo: false
+  repo: open-source-kit
 before:
 - type: createIssue
   title: Maturity assessment
@@ -53,11 +53,10 @@ steps:
   link: '{{ repoUrl }}/issues/1'
   event: issue_comment.created
   actions:
-  # TODO: template repo needs a `add-readme` branch
   - type: createPullRequest
     title: Add a README
     body: 02-readme-pr.md
-    head: add-readme
+    head: main-readme
     action_id: readmePR
   - type: respond
     with: goto-readme-pr.md
@@ -74,11 +73,10 @@ steps:
     left: '%payload.review.state%'
     operator: ===
     right: approved
-  # TODO: template repo needs a `add-contributing` branch
   - type: createPullRequest
     title: Add contributing guidelines
     body: 03-contributing-pr.md
-    head: add-contributing
+    head: contrib-guide
     action_id: contributingPR
   - type: respond
     with: goto-contributing-pr.md
@@ -95,11 +93,10 @@ steps:
     left: '%payload.review.state%'
     operator: ===
     right: approved
-  # TODO: template repo needs a `add-coc` branch
   - type: createPullRequest
     title: Add a code of conduct
     body: 04-code-of-conduct-pr.md
-    head: add-coc
+    head: code-of-conduct
     action_id: cocPR
   - type: respond
     with: goto-cocPr-pr.md
@@ -118,11 +115,10 @@ steps:
     left: '%payload.review.state%'
     operator: ===
     right: approved
-  # TODO: template repo needs a `add-comm-guidelines` branch
   - type: createPullRequest
     title: Add communication guidelines
     body: 05-comm-guidelines-pr.md
-    head: add-comm-guidelines
+    head: comms-strategy
     action_id: commPR
   - type: respond
     with: goto-compr-pr.md
@@ -139,11 +135,10 @@ steps:
     left: '%payload.review.state%'
     operator: ===
     right: approved
-  # TODO: template repo needs a `add-checklists` branch
   - type: createPullRequest
     title: Add checklists for issue template
     body: 06-checklists-pr.md
-    head: add-checklists
+    head: using-oss
     action_id: checklistsPR
   - type: respond
     with: goto-checklists-pr.md
@@ -160,11 +155,10 @@ steps:
     left: '%payload.review.state%'
     operator: ===
     right: approved
-  # TODO: template repo needs a `add-maintainer-guide` branch
   - type: createPullRequest
     title: Maintainer guide
     body: 07-maintainer-pr.md
-    head: add-maintainer-guide
+    head: maintainer-guide
     action_id: maintainerPR
   - type: respond
     with: goto-maintainer-pr.md
@@ -181,11 +175,10 @@ steps:
     left: '%payload.review.state%'
     operator: ===
     right: approved
-  # TODO: template repo needs a `add-license` branch
   - type: createPullRequest
     title: License policy
     body: 08-license-policy-pr.md
-    head: add-license
+    head: license-policy
     action_id: licensePR
   - type: respond
     with: goto-license-pr.md

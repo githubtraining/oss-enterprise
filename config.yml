@@ -44,7 +44,7 @@ steps:
 
 #2
 - title: Give your repository a README.
-  description: Approve the open source kit's README.
+  description: Merge the open source kit's README.
   link: '{{ repoUrl }}/pull/2'
   event: pull_request.closed
   actions:
@@ -65,7 +65,7 @@ steps:
 
 #3
 - title: Give your kit contributing guidelines
-  description: Approve the opens ource kit's contributing guidelines.
+  description: Merge the open source kit's contributing guidelines.
   link: '{{ repoUrl }}/pull/3'
   event: pull_request.closed
   actions:
@@ -88,7 +88,7 @@ steps:
 
 #4
 - title: Provide a code of conduct
-  description: Approve the pull request adding a code of conduct template
+  description: Merge the pull request adding a code of conduct template
   link: '{{ repoUrl }}/pull/4'
   event: pull_request.closed
   actions:
@@ -109,7 +109,7 @@ steps:
 
 #5
 - title: Add communication guidelines
-  description: Approve the pull request that adds communication guidelines for your organization.
+  description: Merge the pull request that adds communication guidelines for your organization.
   link: '{{ repoUrl }}/pull/5'
   event: pull_request.closed
   actions:
@@ -148,7 +148,7 @@ steps:
 
 #7
 - title: Add a maintainer's guide
-  description: Approve the PR that gives open source maintainers some guidance with a guide.
+  description: Merge the PR that gives open source maintainers some guidance with a guide.
   link: '{{ repoUrl }}/pull/7'
   event: pull_request.closed
   actions:
@@ -189,7 +189,7 @@ steps:
 
 #8
 - title: Provide guidance for consuming open source software
-  description: Approve the PR that allows 
+  description: Merge the PR that allows 
   link: '{{ repoUrl }}/pull/9'
   event: pull_request.closed
   actions:

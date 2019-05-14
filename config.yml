@@ -96,11 +96,11 @@ steps:
     title: Add a code of conduct
     body: 04-code-of-conduct-pr.md
     head: add-coc
-    action_id: cocPr
+    action_id: cocPR
   - type: respond
     with: goto-cocPr-pr.md
     data:
-      url: '%actions.cocPr.data.html_url%'
+      url: '%actions.cocPR.data.html_url%'
 
 # TODO: consider adding activity on compliant/violating COC behavior?
 
@@ -108,4 +108,30 @@ steps:
 - title: Provide a code of conduct
   description: Approve the pull request adding a code of conduct template
   link: '{{ repoUrl }}/pull/4'
-  event: 
+  event: pull_request_review.submitted
+  actions:
+  - type: gate
+    left: '%payload.review.state%'
+    operator: ===
+    right: approved
+  # TODO: template repo needs a `add-comm-guidelines` branch
+  - type: createPullRequest
+    title: Add communication guidelines
+    body: 05-comm-guidelines-pr.md
+    head: add-comm-guidelines
+    action_id: commPR
+  - type: respond
+    with: goto-compr-pr.md
+    data:
+      url: '%actions.commPR.data.html_url%'
+
+#5
+- title: Add communication guidelines
+  description: Approve the pull request that adds communication guidelines for your organization.
+  link: '{{ repoUrl }}/pull/5'
+  event: pull_request_review.submitted
+  actions:
+  - type: gate
+    left: '%payload.review.state%'
+    operator: ===
+    right: approved

@@ -101,7 +101,7 @@ steps:
     head: comms-strategy
     action_id: commPR
   - type: respond
-    with: goto-compr-pr.md
+    with: goto-comms-pr.md
     data:
       url: '%actions.commPR.data.html_url%'
 

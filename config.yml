@@ -17,6 +17,9 @@ before:
 # 2. PR: Add a README
 # 3. PR: Add contributing guidelines
 # 4. PR: Add a code of conduct
+# 5. PR: Add communication guidelines
+# 6. PR: Add checklists for issue template
+# 7. PR: Maintainer guide
 
 # Rough outline:
 # - Purpose: create an open source releases-like repo, a resource used by your organization to launch open source projects. 
@@ -137,7 +140,7 @@ steps:
     right: approved
   # TODO: template repo needs a `add-checklists` branch
   - type: createPullRequest
-    title: Provide checklists for issue template
+    title: Add checklists for issue template
     body: 06-checklists-pr.md
     head: add-checklists
     action_id: checklistsPR
@@ -150,6 +153,27 @@ steps:
 - title: Add checklists
   description: Provide checklists that can be used to release a new open source project.
   link: '{{ repoUrl }}/pull/6'
+  event: pull_request_review.submitted
+  actions:
+  - type: gate
+    left: '%payload.review.state%'
+    operator: ===
+    right: approved
+  # TODO: template repo needs a `add-maintainer-guide` branch
+  - type: createPullRequest
+    title: Maintainer guide
+    body: 07-maintainer-pr.md
+    head: add-maintainer-guide
+    action_id: maintainerPR
+  - type: respond
+    with: goto-maintainer-pr.md
+    data:
+      url: '%actions.maintainerPR.data.html_url%'
+
+#7
+- title: Add a maintainer's guide
+  description: Approve the PR that gives open source maintainers some guidance with a guide.
+  link: '{{ repoUrl }}/pull/7'
   event: pull_request_review.submitted
   actions:
   - type: gate

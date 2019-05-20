@@ -10,6 +10,12 @@ before:
   body: welcome.md
   comments:
     - 01-goals-issue.md
+tags:
+  - Open source
+  - Enterprise
+  - Licensing
+  - Templates
+  - Guidelines
 
 # Course artifacts:
 # 1. Issue: Maturity assessment

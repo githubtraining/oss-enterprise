@@ -3,8 +3,8 @@ Creating an open source program within your organization can be an overwhelming 
 In this course, you'll be able to:
 - establish the goals of an open source program
 - create a repository for your open source program
-- create contributing guidelines for your open source 
-- create a code of conduct for your open source programs
+- create contributing guidelines for your open source repository
+- create a code of conduct for your open source program(s)
 - create templated communication guidelines
 - provide guidance for issue templates
 - create a maintainer guide

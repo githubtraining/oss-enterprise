@@ -1,6 +1,6 @@
-title: Open source in the enterprise
-tagline: Open source in the enterprise
-description: Open source in the enterprise
+title: Create an open source program
+tagline: Get an open source program up and running in your organization.
+description: This lab walks you through the necessary pieces of getting an open source program started in your organization.
 template:
   name: oss-enterprise
   repo: open-source-kit
@@ -10,6 +10,12 @@ before:
   body: welcome.md
   comments:
     - 01-goals-issue.md
+tags:
+  - Open source
+  - Enterprise
+  - Licensing
+  - Templates
+  - Guidelines
 
 # Course artifacts:
 # 1. Issue: Maturity assessment

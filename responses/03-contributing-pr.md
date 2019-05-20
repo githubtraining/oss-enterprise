@@ -9,7 +9,7 @@ The `CONTRIBUTING.md` file should be customized for each project as much as poss
 If you're looking for inspiration, here are some great examples of `CONTRIBUTING.md` files from notable projects. :sparkles:
 - [electron](https://github.com/electron/electron/blob/master/CONTRIBUTING.md)
 - [atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
-- [freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp/blob/staging/CONTRIBUTING.md)
+- [freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp/blob/master/CONTRIBUTING.md)
 - [Bitcoin](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md)
 - [facebook/react](https://github.com/facebook/react/blob/master/CONTRIBUTING.md) links out to separate documentation, but still gives the same important information
 - [Microsoft/sqlopsstudio](https://github.com/Microsoft/sqlopsstudio/blob/master/CONTRIBUTING.md)

@@ -1,4 +1,4 @@
-## Establish program  goals
+# Establish program goals
 
 After completing the self assessment, the next step is to establish a clear set of goals for your open source program.  Use the following matrix to guide the discussion:
 
@@ -20,7 +20,13 @@ After completing the self assessment, the next step is to establish a clear set 
 
 **Optimized** - the process is continually and reliably improving through both incremental and innovative changes. Success depends on reducing the risk of change.
 
-The goals you set here are preliminary, you'll have an opportunity to formalize them later. Feel free to jot your goals in this issue, or just type "done" to move on. 
+## Step 1: Establish preliminary goals
+
+The goals you set here are preliminary, you'll have an opportunity to formalize them later. 
+
+### :keyboard: Action: Comment with goals 
+
+1. Write your goals in this issue, or just type "done" to move on. 
 
 <hr>
 <h3 align="center">I'll respond when you comment on this issue.</h3>

@@ -39,6 +39,15 @@ steps:
   link: '{{ repoUrl }}/issues/1'
   event: issue_comment.created
   actions:
+  - type: gate
+    left: '%payload.issue.title%'
+    operator: ===
+    right: Open source assessment
+    else:
+    - type: respond
+      with: e-unexpected.md
+      data:
+        expected: comment on the open source assessment issue
   - type: createPullRequest
     title: Add a README
     body: 02-readme-pr.md
@@ -63,6 +72,15 @@ steps:
     else:
     - type: respond
       with: e-unexpected-merge.md
+  - type: gate
+    left: '%payload.pull_request.title%'
+    operator: ===
+    right: Add a README
+    else:
+    - type: respond
+      with: e-unexpected.md
+      data:
+        expected: merge the pull request titled Add a README
   - type: createPullRequest
     title: Add contributing guidelines
     body: 03-contributing-pr.md
@@ -84,6 +102,15 @@ steps:
     else:
     - type: respond
       with: e-unexpected-merge.md
+  - type: gate
+    left: '%payload.pull_request.title%'
+    operator: ===
+    right: Add contributing guidelines
+    else:
+    - type: respond
+      with: e-unexpected.md
+      data:
+        expected: merge the pull request titled Add contributing guidelines
   - type: createIssue
     title: Choose your code of conduct
     body: 04-code-of-conduct.md
@@ -138,6 +165,11 @@ steps:
     left: '%payload.pull_request.title%'
     operator: ===
     right: Add communication guidelines
+    else:
+    - type: respond
+      with: e-unexpected.md
+      data:
+        expected: merge the pull request titled Add communication guidelines
   - type: createPullRequest
     title: Add checklists for issue template
     body: 06-checklists-pr.md
@@ -156,6 +188,18 @@ steps:
   actions:
   - type: gate
     left: '%payload.pull_request.merged%'
+    else:
+    - type: respond
+      with: e-unexpected-merge.md
+  - type: gate
+    left: '%payload.pull_request.title%'
+    operator: ===
+    right: Add checklists for issue template
+    else:
+    - type: respond
+      with: e-unexpected.md
+      data:
+        expected: merge the pull request titled Add checklists for issue template
   - type: createPullRequest
     title: Maintainer guide
     body: 07-maintainer-pr.md
@@ -174,6 +218,18 @@ steps:
   actions:
   - type: gate
     left: '%payload.pull_request.merged%'
+    else:
+    - type: respond
+      with: e-unexpected-merge.md
+  - type: gate
+    left: '%payload.pull_request.title%'
+    operator: ===
+    right: Maintainer guide
+    else:
+    - type: respond
+      with: e-unexpected.md
+      data:
+        expected: merge the pull request titled Maintainer guide
   - type: createPullRequest
     title: License policy
     body: 08-license-policy-pr.md
@@ -197,6 +253,15 @@ steps:
     else:
     - type: respond
       with: e-unexpected-merge.md
+  - type: gate
+    left: '%payload.pull_request.title%'
+    operator: ===
+    right: License policy
+    else:
+    - type: respond
+      with: e-unexpected.md
+      data:
+        expected: merge the pull request titled License policy
   - type: createPullRequest
     title: Add issue template for consuming OSS
     body: 09-consuming-pr.md
@@ -218,6 +283,15 @@ steps:
     else:
     - type: respond
       with: e-unexpected-merge.md
+  - type: gate
+    left: '%payload.pull_request.title%'
+    operator: ===
+    right: Add issue template for consuming OSS
+    else:
+    - type: respond
+      with: e-unexpected.md
+      data:
+        expected: merge the pull request titled Add issue template for consuming OSS
   - type: createPullRequest
     title: Add a template README
     body: 10-template-readme-pr.md 
@@ -239,6 +313,15 @@ steps:
     else:
     - type: respond
       with: e-unexpected-merge.md
+  - type: gate
+    left: '%payload.pull_request.title%'
+    operator: ===
+    right: Add a template README
+    else:
+    - type: respond
+      with: e-unexpected.md
+      data:
+        expected: merge the pull request titled Add a template README
   - type: createIssue
     title: Congratulations
     body: done.md

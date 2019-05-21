@@ -95,7 +95,7 @@ steps:
 - title: Provide a code of conduct
   description: Close the issue prompting you to add a code of conduct template.
   link: '{{ repoUrl }}/pull/4'
-  event: issue.closed
+  event: issues.closed
   actions:
   - type: createPullRequest
     title: Add communication guidelines

@@ -7,8 +7,8 @@ This template will be used in all of your organization's repositories. It should
 The `CONTRIBUTING.md` file should be customized for each project as much as possible to be clear and helpful. If contributors aren't sure what to do, their contributions won't be as useful to the project, and it will take maintainers much longer for each pull request to get it in shape to merge.  
 
 If you're looking for inspiration, here are some great examples of `CONTRIBUTING.md` files from notable projects. :sparkles:
-- [electron](https://github.com/electron/electron/blob/master/CONTRIBUTING.md)
-- [atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
+- [Electron](https://github.com/electron/electron/blob/master/CONTRIBUTING.md)
+- [Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md)
 - [freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp/blob/staging/CONTRIBUTING.md)
 - [Bitcoin](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md)
 - [facebook/react](https://github.com/facebook/react/blob/master/CONTRIBUTING.md) links out to separate documentation, but still gives the same important information

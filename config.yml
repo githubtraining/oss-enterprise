@@ -6,7 +6,7 @@ template:
   repo: open-source-kit
 before:
 - type: createIssue
-  title: Maturity assessment
+  title: Open source assessment
   body: welcome.md
   comments:
     - 01-goals-issue.md
@@ -18,7 +18,7 @@ tags:
   - Guidelines
 
 # Course artifacts:
-# 1. Issue: Maturity assessment
+# 1. Issue: Open source assessment
 # 2. PR: Add a README
 # 3. PR: Add contributing guidelines
 # 4. PR: Add a code of conduct

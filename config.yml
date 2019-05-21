@@ -172,7 +172,7 @@ steps:
 
 # TODO: consider a licensing quiz or activity
 
-#7
+#8
 - title: Add a license policy
   description: Help your organization determine what licenses should be used by creating a license policy.
   link: '{{ repoUrl }}/pull/8'
@@ -193,7 +193,7 @@ steps:
     data:
       url: '%actions.consumingPR.data.html_url%'
 
-#8
+#9
 - title: Provide guidance for consuming open source software
   description: Merge the PR that allows 
   link: '{{ repoUrl }}/pull/9'
@@ -214,7 +214,7 @@ steps:
     data:
       url: '%actions.templateReadme.data.html_url%'
 
-#9
+#10
 - title: Add a template README
   description: Provide a README that team members can use when open sourcing their projects.
   link: '{{ repoUrl }}/pull/10'

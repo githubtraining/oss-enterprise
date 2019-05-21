@@ -1,4 +1,4 @@
-## Add a `CONTRIBUTING.md` to your organization's open source repository
+## Step 3: Add a `CONTRIBUTING.md` to your organization's open source repository
 
 This pull request introduces a `CONTRIBUTING.md` template file.
 
@@ -14,12 +14,11 @@ If you're looking for inspiration, here are some great examples of `CONTRIBUTING
 - [facebook/react](https://github.com/facebook/react/blob/master/CONTRIBUTING.md) links out to separate documentation, but still gives the same important information
 - [Microsoft/sqlopsstudio](https://github.com/Microsoft/sqlopsstudio/blob/master/CONTRIBUTING.md)
 
-## Next Steps
+### :keyboard: Action: Improve the guide to contributing
 
-- [ ] Look through the examples listed above, and make note of qualities you like (or don't like) about each document
-- [ ] Change the document in this pull request so it is a good template for all other repositories in your organization
-
-Commit directly to this branch. When you're ready to move on, merge this pull request.
+1. Look through the examples listed above, and make note of qualities you like (or don't like) about each document.
+2. Change the document in this pull request so it is a good template for all other repositories in your organization.
+3. Commit directly to this branch. When you're ready to move on, merge this pull request.
 
 <hr>
 <h3 align="center">I'll respond when you merge this pull request.</h3>

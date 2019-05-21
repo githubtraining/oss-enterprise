@@ -48,6 +48,9 @@ steps:
     with: goto-readme-pr.md
     data:
       url: '%actions.readmePR.data.html_url%'
+  - type: closeIssue
+    issue: Open source assessment
+    required: false
 
 #2
 - title: Give your repository a README.

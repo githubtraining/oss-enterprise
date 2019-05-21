@@ -102,7 +102,6 @@ steps:
     left: '%payload.pull_request.title%'
     operator: ===
     right: 'Create CODE_OF_CONDUCT.md'
-  - type: mergePullRequest
   - type: createPullRequest
     title: Add communication guidelines
     body: 05-comm-guidelines-pr.md

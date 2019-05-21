@@ -21,7 +21,8 @@ tags:
 # 1. Issue: Maturity assessment
 # 2. PR: Add a README
 # 3. PR: Add contributing guidelines
-# 4. PR: Add a code of conduct
+# 4. Issue: Choose your code of conduct
+# 5. PR: Create CODE_OF_CONDUCT.md
 # 5. PR: Add communication guidelines
 # 6. PR: Add checklists for issue template
 # 7. PR: Maintainer guide
@@ -80,10 +81,9 @@ steps:
     else:
     - type: respond
       with: e-unexpected-merge.md
-  - type: createPullRequest
-    title: Add a code of conduct
-    body: 04-code-of-conduct-pr.md
-    head: code-of-conduct
+  - type: createIssue
+    title: Choose your code of conduct
+    body: 04-code-of-conduct.md
     action_id: cocPR
   - type: respond
     with: goto-cocPr-pr.md
@@ -94,15 +94,22 @@ steps:
 
 #4
 - title: Provide a code of conduct
-  description: Merge the pull request adding a code of conduct template
+  description: Merge the pull request with your code of conduct.
   link: '{{ repoUrl }}/pull/4'
-  event: pull_request.closed
+  event: pull_request.opened
   actions:
   - type: gate
-    left: '%payload.pull_request.merged%'
+    left: '%payload.pull_request.title%'
+    operator: ===
+    right: 'Create CODE_OF_CONDUCT.md'
     else:
     - type: respond
-      with: e-unexpected-merge.md
+      with: unknown-pr.md
+      data:
+        expected: 'Create CODE_OF_CONDUCT.md'
+  - type: closeIssue
+    issue: Choose your code of conduct
+    required: false
   - type: createPullRequest
     title: Add communication guidelines
     body: 05-comm-guidelines-pr.md
@@ -116,7 +123,7 @@ steps:
 #5
 - title: Add communication guidelines
   description: Merge the pull request that adds communication guidelines for your organization.
-  link: '{{ repoUrl }}/pull/5'
+  link: '{{ repoUrl }}/pull/6'
   event: pull_request.closed
   actions:
   - type: gate
@@ -124,6 +131,10 @@ steps:
     else:
     - type: respond
       with: e-unexpected-merge.md
+  - type: gate
+    left: '%payload.pull_request.title%'
+    operator: ===
+    right: Add communication guidelines
   - type: createPullRequest
     title: Add checklists for issue template
     body: 06-checklists-pr.md
@@ -137,7 +148,7 @@ steps:
 #6
 - title: Add checklists
   description: Provide checklists that can be used to release a new open source project.
-  link: '{{ repoUrl }}/pull/6'
+  link: '{{ repoUrl }}/pull/7'
   event: pull_request.closed
   actions:
   - type: gate
@@ -154,8 +165,8 @@ steps:
 
 #7
 - title: Add a maintainer's guide
-  description: Merge the PR that gives open source maintainers some guidance with a guide.
-  link: '{{ repoUrl }}/pull/7'
+  description: Merge the pull request that creates a guide for open source maintainers.
+  link: '{{ repoUrl }}/pull/8'
   event: pull_request.closed
   actions:
   - type: gate
@@ -175,7 +186,7 @@ steps:
 #8
 - title: Add a license policy
   description: Help your organization determine what licenses should be used by creating a license policy.
-  link: '{{ repoUrl }}/pull/8'
+  link: '{{ repoUrl }}/pull/9'
   event: pull_request.closed
   actions:
   - type: gate
@@ -195,8 +206,8 @@ steps:
 
 #9
 - title: Provide guidance for consuming open source software
-  description: Merge the PR that allows 
-  link: '{{ repoUrl }}/pull/9'
+  description: Merge the pull request that adds guidance for consuming open source software within your organization.
+  link: '{{ repoUrl }}/pull/10'
   event: pull_request.closed
   actions:
   - type: gate
@@ -217,7 +228,7 @@ steps:
 #10
 - title: Add a template README
   description: Provide a README that team members can use when open sourcing their projects.
-  link: '{{ repoUrl }}/pull/10'
+  link: '{{ repoUrl }}/pull/11'
   event: pull_request.closed
   actions:
   - type: gate

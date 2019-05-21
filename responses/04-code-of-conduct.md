@@ -58,7 +58,8 @@ It is generally acceptable to customize the code of conduct to meet your organiz
 1. Review the code of conduct and scroll to the bottom of the page.
 1. Write a descriptive commit message.
 1. Make sure that the option to "create a new branch" is selected, and click **Commit new file**. 
-1. Merge your new pull request. 
+1. Create a new pull request to add a code of conduct. 
+1. Once it's ready, merge your new pull request. 
 1. When you're ready to move on, close this issue.
 
 <hr>

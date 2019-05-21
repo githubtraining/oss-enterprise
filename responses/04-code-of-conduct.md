@@ -1,6 +1,6 @@
-## Add a `CODE_OF_CONDUCT.md` to your organization's open source repository
+## Choose a `CODE_OF_CONDUCT.md` for your organization's open source repository
 
-This pull request introduces a `CODE_OF_CONDUCT.md` template file.
+We'll create a `CODE_OF_CONDUCT.md` template file.
 
 This template will be recommended for all of your organization's repositories. Unlike the `CONTRIBUTING.md`, it should **not** be customized by the maintainers.
 
@@ -18,7 +18,7 @@ For more information on why a code of conduct is a good idea, check out the arti
 
 Thought leaders on establishing healthy behaviors in the open source community have joined forces to develop some fantastic drop-in codes of conduct. GitHub makes it easy to drop these established documents in to any project. To read directions on how to use this drop-in code, check out this [help documentation](https://help.github.com/articles/adding-a-code-of-conduct-to-your-project/).
 
-Here are the drop-in codes currently supported by GitHub:
+Here are the drop-in codes of conduct currently supported by GitHub:
 
 - [Contributor Covenant](https://www.contributor-covenant.org/)
 - [Citizen Code of Conduct](http://citizencodeofconduct.org/)
@@ -42,16 +42,11 @@ It is generally acceptable to customize the code of conduct to meet your organiz
 
 ## Step 4: Code of conduct 
 
-**Decision Time** Decide which code of conduct you will use for your projects. Will you promote the use of an established template or create your own? Based on your decision, follow the path outlined below (you may want to delete the other set of instructions from this comment for clarity):
+**Decision Time** Decide which code of conduct you will use for your projects. Will you promote the use of an established template or create your own? Based on your decision, follow the path outlined below:
 
 ### :keyboard: Activity: Choose a code of conduct
 
 **If you want to use an established code of conduct**
-1. Replace the placeholder text in the instruction document in this pull request based on your selection
-1. Delete the CODE-OF-CONDUCT-template.md file in this pull request.
-1. When you're ready to move on, close this issue.
-
-**If you want to use a custom code of conduct**
 1. [Create a new code of conduct from a template]({{ repoUrl }}/community/code-of-conduct/new).
 1. Fill in your information on the right side.  
 1. Click **Review and submit**.
@@ -59,8 +54,15 @@ It is generally acceptable to customize the code of conduct to meet your organiz
 1. Write a descriptive commit message.
 1. Make sure that the option to "create a new branch" is selected, and click **Commit new file**. 
 1. Create a new pull request to add a code of conduct. 
-1. Once it's ready, merge your new pull request. 
-1. When you're ready to move on, close this issue.
+
+**If you want to use a custom code of conduct**
+
+1. [Create a new pull request for your custom code of conduct]({{ repoUrl }}/new/master?filename=CODE_OF_CONDUCT.md).
+1. Enter your code of conduct in the text area.
+1. Write a descriptive commit message.
+1. Select **Create a new branch for this commit and start a pull request**.
+1. Click **Propose new file**.
+1. Enter the following title for your pull request: `Create CODE_OF_CONDUCT.md`
 
 <hr>
-<h3 align="center">I'll respond when you close this issue.</h3>
+<h3 align="center">I'll respond in your new pull request.</h3>

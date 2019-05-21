@@ -21,7 +21,8 @@ tags:
 # 1. Issue: Maturity assessment
 # 2. PR: Add a README
 # 3. PR: Add contributing guidelines
-# 4. PR: Add a code of conduct
+# 4. Issue: Choose your code of conduct
+# 5. PR: Create CODE_OF_CONDUCT.md
 # 5. PR: Add communication guidelines
 # 6. PR: Add checklists for issue template
 # 7. PR: Maintainer guide
@@ -81,7 +82,7 @@ steps:
     - type: respond
       with: e-unexpected-merge.md
   - type: createIssue
-    title: Add a code of conduct
+    title: Choose your code of conduct
     body: 04-code-of-conduct.md
     action_id: cocPR
   - type: respond
@@ -93,10 +94,15 @@ steps:
 
 #4
 - title: Provide a code of conduct
-  description: Close the issue prompting you to add a code of conduct template.
+  description: Merge the pull request with your code of conduct.
   link: '{{ repoUrl }}/pull/4'
-  event: issues.closed
+  event: pull_request.opened
   actions:
+  - type: gate
+    left: '%payload.pull_request.title%'
+    operator: ===
+    right: 'Create CODE_OF_CONDUCT.md'
+  - type: mergePullRequest
   - type: createPullRequest
     title: Add communication guidelines
     body: 05-comm-guidelines-pr.md

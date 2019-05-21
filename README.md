@@ -1,6 +1,6 @@
-Did you know that many organizations inlcuding industry innovators like Microsoft, Google, and Facebook, have established open source programs? Giving back is a competitive advantage, and creating an open source program within your organization will help to accomplish your goals. This lab will help you establish guidance and governance for your open source program. You'll get to answer big questions and determine the impact of creating an open source office. 
+Did you know that many organizations including industry innovators like Microsoft, Google, and Facebook, have established open source programs? Giving back is a competitive advantage, and creating an open source program within your organization will help to accomplish your goals. This lab will help you establish guidance and governance for your open source program. You'll get to answer big questions and determine the impact of creating an open source office. 
 
-In this course, you'll be able to:
+After taking this course, you'll be able to:
 - Establish the goals of an open source program
 - Create a repository for your open source program
 - Create contributing guidelines for your open source repository

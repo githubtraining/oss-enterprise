@@ -10,6 +10,6 @@ You finished this course! Now, you have an open source tool-kit with the documen
    - [Clone the repository](https://help.github.com/en/articles/cloning-a-repository) to your machine
 2. If you'd like to transfer the repository to an organization on GitHub:
    - If your organization is on GitHub.com, [fork it]({{ forkURL }})
-   - If your organization is on GitHub Enterprise Server, [transfer the repository](https://help.github.com/enterprise/2.2/admin/articles/moving-a-repository-from-github-com-to-github-enterprise)
+   - If your organization is on GitHub Enterprise Server, [transfer the repository](https://help.github.com/enterprise/admin/articles/moving-a-repository-from-github-com-to-github-enterprise)
 
 I won't track any further events in this repository.

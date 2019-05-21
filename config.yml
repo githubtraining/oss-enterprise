@@ -102,6 +102,14 @@ steps:
     left: '%payload.pull_request.title%'
     operator: ===
     right: 'Create CODE_OF_CONDUCT.md'
+    else:
+    - type: respond
+      with: unknown-pr.md
+      data:
+        expected: 'Create CODE_OF_CONDUCT.md'
+  - type: closeIssue
+    issue: Choose your code of conduct
+    required: false
   - type: createPullRequest
     title: Add communication guidelines
     body: 05-comm-guidelines-pr.md
@@ -123,6 +131,10 @@ steps:
     else:
     - type: respond
       with: e-unexpected-merge.md
+  - type: gate
+    left: '%payload.pull_request.title%'
+    operator: ===
+    right: Add communication guidelines
   - type: createPullRequest
     title: Add checklists for issue template
     body: 06-checklists-pr.md

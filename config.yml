@@ -80,10 +80,9 @@ steps:
     else:
     - type: respond
       with: e-unexpected-merge.md
-  - type: createPullRequest
+  - type: createIssue
     title: Add a code of conduct
-    body: 04-code-of-conduct-pr.md
-    head: code-of-conduct
+    body: 04-code-of-conduct.md
     action_id: cocPR
   - type: respond
     with: goto-cocPr-pr.md
@@ -94,15 +93,10 @@ steps:
 
 #4
 - title: Provide a code of conduct
-  description: Merge the pull request adding a code of conduct template
+  description: Close the issue prompting you to add a code of conduct template.
   link: '{{ repoUrl }}/pull/4'
-  event: pull_request.closed
+  event: issue.closed
   actions:
-  - type: gate
-    left: '%payload.pull_request.merged%'
-    else:
-    - type: respond
-      with: e-unexpected-merge.md
   - type: createPullRequest
     title: Add communication guidelines
     body: 05-comm-guidelines-pr.md
@@ -154,7 +148,7 @@ steps:
 
 #7
 - title: Add a maintainer's guide
-  description: Merge the PR that gives open source maintainers some guidance with a guide.
+  description: Merge the pull request that creates a guide for open source maintainers.
   link: '{{ repoUrl }}/pull/7'
   event: pull_request.closed
   actions:
@@ -195,7 +189,7 @@ steps:
 
 #8
 - title: Provide guidance for consuming open source software
-  description: Merge the PR that allows 
+  description: Merge the pull request that adds guidance for consuming open source software within your organization.
   link: '{{ repoUrl }}/pull/9'
   event: pull_request.closed
   actions:

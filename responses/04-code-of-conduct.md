@@ -47,12 +47,17 @@ It is generally acceptable to customize the code of conduct to meet your organiz
 **Using an established Code of Conduct**
 - [ ] Replace the placeholder text in the instruction document in this pull request based on your selection
 - [ ] Delete the CODE-OF-CONDUCT-template.md  file in this pull request
+1. Close this issue.
 
 **Using a custom Code of Conduct**
-- [ ] Create your custom code in the CODE-OF-CONDUCT-template.md file in this pull request
-- [ ] Replace the text in the instructions document of this pull request, instructing users to copy/paste the template code into their projects
-
-Commit directly to this branch. When you're ready to move on, merge this pull request.
+1. [Create a new code of conduct from a template]({{ repoUrl }}/community/code-of-conduct/new).
+1. Fill in your information on the right side.  
+1. Click **Review and submit**.
+1. Review the code of conduct and scroll to the bottom of the page.
+1. Write a descriptive commit message.
+1. Make sure that the option to "create a new branch" is selected, and click **Commit new file**. 
+1. Merge your new pull request. 
+1. Close this issue. 
 
 <hr>
-<h3 align="center">I'll respond when you merge this pull request.</h3>
+<h3 align="center">I'll respond when you close this issue.</h3>

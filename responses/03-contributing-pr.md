@@ -2,9 +2,9 @@
 
 This pull request introduces a `CONTRIBUTING.md` template file.
 
-This template will be used in all of your organization's repositories. It should be customized by the maintainers. The `CONTRIBUTING.md` file communicates expectations with contributors about how they can help contribute to the project.
+This template should be used in all of your organization's repositories and be customized by the maintainers. The `CONTRIBUTING.md` file communicates expectations with contributors about how they can help contribute to the project.
 
-The `CONTRIBUTING.md` file should be customized for each project as much as possible to be clear and helpful. If contributors aren't sure what to do, their contributions won't be as useful to the project, and it will take maintainers much longer for each pull request to get it in shape to merge.  
+The `CONTRIBUTING.md` file should be customized for each project as much as possible to be clear and helpful. If contributors aren't sure what to do, their contributions won't be as useful to the project. This often results in inconsistent contributions and longer than needed review time from maintainers before merging.  
 
 If you're looking for inspiration, here are some great examples of `CONTRIBUTING.md` files from notable projects. :sparkles:
 - [Electron](https://github.com/electron/electron/blob/master/CONTRIBUTING.md)

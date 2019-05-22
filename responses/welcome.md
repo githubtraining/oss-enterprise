@@ -6,7 +6,7 @@ Throughout the course, you'll be prompted to have offline conversations with dep
 
 ## Complete the self assessment
 
-As we begin our journey into preparing for open source, let's start with a few self assessment of where your open source program stands today.
+As we begin our journey into preparing for open source, let's start with a few self assessments of where your open source program stands today.
 1. Navigate to the [open source self assessments](https://githubtraining.github.io/oss-assessment/).
 1. Take each of the assessments.
 1. Jot down your level within each dimension.

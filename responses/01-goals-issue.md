@@ -10,7 +10,19 @@ After completing the self assessment, the next step is to establish a clear set 
 
 ### Levels within each dimension
 
-![open-source-levels](https://user-images.githubusercontent.com/6351798/58223496-1f82f600-7cd7-11e9-9e24-498165aea70c.png)
+![os-levels](https://user-images.githubusercontent.com/6351798/58345546-d7b6b880-7e15-11e9-863b-803604593e43.png)
+
+**Ad-hoc** - a new or undocumented process is uncontrolled, reactive and unpredictable, typically driven by individuals without coordination or communication. Success depends on individual heroics.
+
+**Managed** - a process is partially documented, possibly leading to consistent results. Success depends on discipline.	
+
+**Defined** - a process is documented, standardized, and integrated into other processes. Success depends on automation.	
+
+**Measured** - the process is quantitatively managed. Success depends on measuring metrics against business goals.	
+
+**Optimized** - the process is continually and reliably improving through both incremental and innovative changes. Success depends on reducing the risk of change.
+
+
 
 ## Step 1: Establish preliminary goals
 

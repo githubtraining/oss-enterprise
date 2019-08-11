@@ -3,8 +3,7 @@
 <h1 align="center">Course: Create an open source program
  </h1>
 
-This repository powers the Learning Lab course [_Create an open source program
-_](https://lab.github.com/githubtraining/create-an-open-source-program). 
+This repository powers the Learning Lab course [_Create an open source program_](https://lab.github.com/githubtraining/create-an-open-source-program). 
 
 Every Learning Lab course is made up of:
 - a [course repository](https://github.com/githubtraining/oss-enterprise), and

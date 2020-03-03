@@ -32,6 +32,7 @@ After taking this course, you'll be able to:
 
 We recommend you first complete the following courses:
 - [InnerSource fundamentals](https://lab.github.com/githubtraining/innersource-fundamentals) to learn how InnerSource and open source are different but related concepts. A strong InnerSource culture could be the perfect precursor to a successful open source program.
+- [Reviewing pull requests](https://lab.github.com/githubtraining/reviewing-pull-requests/) to learn how to work in GitHub pull requests, which are used throughout this course.
 
 ## Projects used
 

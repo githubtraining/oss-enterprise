@@ -26,6 +26,9 @@ After taking this course, you'll be able to:
 
 ## Prerequisites
 
+We recommend you first complete the following courses:
+- [InnerSource fundamentals](https://lab.github.com/githubtraining/innersource-fundamentals) to learn how InnerSource and open source are different but related concepts. A strong InnerSource culture could be the perfect precursor to a successful open source program.
+
 ## Projects used
 
 This course uses all original content, we didn't use any open source projects to create it.

@@ -24,6 +24,10 @@ After taking this course, you'll be able to:
 
 ## What you'll build
 
+![screenshot of a source repository showing folders for templates and docs, a license, and a README describing the process for releasing open source software](https://user-images.githubusercontent.com/16547949/75806576-eab9ca00-5d51-11ea-91de-ae56e92f2592.png)
+
+- Completed [source repository](https://github.com/githubtraining/oss-enterprise-demo) showing the templates added throughout the course.
+
 ## Prerequisites
 
 We recommend you first complete the following courses:

@@ -28,4 +28,8 @@ After taking this course, you'll be able to:
 
 ## Projects used
 
+This course uses all original content, we didn't use any open source projects to create it.
+
 ## Audience
+
+Developers, Managers, Teams

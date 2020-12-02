@@ -327,7 +327,7 @@ steps:
     action_id: finalIssue
     data:
       forkURL: '%payload.repository.html_url%/fork'
-      downloadURL: '%payload.repository.html_url%/archive/master.zip'
+      downloadURL: '%payload.repository.html_url%/archive/main.zip'
   - type: respond
     with: goto-final-issue.md
     data:
